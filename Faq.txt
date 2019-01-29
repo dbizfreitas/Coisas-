@@ -1,7 +1,7 @@
 5067540005496025 alelo 
 3306926600000759300 loyale
 
-10764323196 nis mãe
+10764323196 nis mÃ£e
 19016871139 nis
 16928040904 cpf pai
 03483524924 cpf                           
@@ -11,12 +11,12 @@
 955461995 renavan
 Contrato cx 8444411862376
 Processo muro: 0311098-10.2017.8.24.0020  senha: ktldd9
-Processo cons: 0310014-37.2018.8.24.0020  senha: 
+Processo cons: 0310014-37.2018.8.24.0020  senha: xqjkax
 
 00.456.865/0001-67
 
 Consulta Recibo IR 
--Código de acesso 
+-CÃ³digo de acesso 
 124100526741
 Senha Reggae88
 
@@ -38,12 +38,12 @@ Senha: ponto.
 Server name: Ponto 
 Databasename: Ponto 
 TCP/IP: host=192,168,2,233;serverport=9001
-Acesso a maquina com meu usuário neste IP
+Acesso a maquina com meu usuÃ¡rio neste IP
 
 
 Pontual Fly Balsini
 Entidade:
-Relógio:
+RelÃ³gio:
 
 Consultas banco pontual 
 select * from glb_owner.vw_entidades where upper(nome) like upper('%cric%') --29 identifica entidade
@@ -55,7 +55,7 @@ select * from glb_owner.vw_AUD_pessoas where i_pessoas = 27921;
 select * from glb_owner.vw_lib_licencas where i_databases = 38 and DT_FINAL is NULL;
 select * from glb_owner.vw_lib_sistemas where i_sistemas in (3,5,8)
 
-Ajustar base para integração pontual 
+Ajustar base para integraÃ§Ã£o pontual 
 select * from integ_estados where estado = 'P'
 select * from integ_config
 
@@ -66,7 +66,7 @@ Desabitar: call bethadba.pg_setoption('fire_triggers','off')
 Habilitar: call bethadba.pg_setoption('fire_triggers','on')
 
 ##################################################################################
-Atualizar atbs automático 
+Atualizar atbs automÃ¡tico 
 c:\BthTools\ATBanco.exe Geral9?C:\FolhaRh6127\At08685.atb?At08707 -uadmin -sadmin
 
 ##################################################################################
