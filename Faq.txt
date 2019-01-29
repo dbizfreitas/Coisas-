@@ -1,0 +1,85 @@
+5067540005496025 alelo 
+3306926600000759300 loyale
+
+10764323196 nis mãe
+19016871139 nis
+16928040904 cpf pai
+03483524924 cpf                           
+02684131937 cpf mae
+
+728739772606 CAC
+955461995 renavan
+Contrato cx 8444411862376
+Processo muro: 0311098-10.2017.8.24.0020  senha: ktldd9
+Processo cons: 0310014-37.2018.8.24.0020  senha: 
+
+00.456.865/0001-67
+
+Consulta Recibo IR 
+-Código de acesso 
+124100526741
+Senha Reggae88
+
+1326183
+20180746303827315
+
+Logmein Senha @reggae88
+
+tecbth_dev: oKmrXmXeF11UxLuJ8OXaQC5UFjKUP7
+desbth: imxiv6s3l4r4hzicbqoepyhxyevp64
+bethadba: tdnwzsfbx0pedtypql7gl9gf3yogzo
+
+
+
+Suporte Base Ponto Balsini
+User: admin
+Senha: ponto.
+
+Server name: Ponto 
+Databasename: Ponto 
+TCP/IP: host=192,168,2,233;serverport=9001
+Acesso a maquina com meu usuário neste IP
+
+
+Pontual Fly Balsini
+Entidade:
+Relógio:
+
+Consultas banco pontual 
+select * from glb_owner.vw_entidades where upper(nome) like upper('%cric%') --29 identifica entidade
+select * from glb_owner.vw_entidades_databases where i_entidades = 29 --26 identifica database
+CALL bethadba.pkg_bfc.set_ctx(38); -- fixa o contexto do database 
+select * from glb_owner.vw_pessoas where i_pessoas = 27921; -- consultas
+ 
+select * from glb_owner.vw_AUD_pessoas where i_pessoas = 27921;
+select * from glb_owner.vw_lib_licencas where i_databases = 38 and DT_FINAL is NULL;
+select * from glb_owner.vw_lib_sistemas where i_sistemas in (3,5,8)
+
+Ajustar base para integração pontual 
+select * from integ_estados where estado = 'P'
+select * from integ_config
+
+
+##################################################################################
+Desabilitar trigger
+Desabitar: call bethadba.pg_setoption('fire_triggers','off')
+Habilitar: call bethadba.pg_setoption('fire_triggers','on')
+
+##################################################################################
+Atualizar atbs automático 
+c:\BthTools\ATBanco.exe Geral9?C:\FolhaRh6127\At08685.atb?At08707 -uadmin -sadmin
+
+##################################################################################
+Comando quando da colum found 
+
+call bethadba.dbp_conn_gera(IN a_entid integer,IN a_ano smallint, IN a_sistema smallint, in a_integracao smallint default 0)
+ex.: call bethadba.dbp_conn_gera(1,2018,300);
+
+##################################################################################
+Recriar logs
+dbeng9 -f C:\Bases\Paranavai\folharh.db 
+dblog -t C:\Bases\Paranavai\folharh.log C:\Bases\Paranavai\folharh.db
+
+SQL de erros de trigger 
+select * from bethadba.erros where i_sistema in (300,314,329)
+order by i_objeto, i_erro 
