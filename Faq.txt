@@ -1,14 +1,15 @@
 5067540005496025 alelo 
 3306926600000759300 loyale
-
-10764323196 nis mÃ£e
+1739
+10764323196 nis mãe
 19016871139 nis
 16928040904 cpf pai
 03483524924 cpf                           
-02684131937 cpf mae
+02684131937 cpf mae 
 
 728739772606 CAC
 955461995 renavan
+
 Contrato cx 8444411862376
 Processo muro: 0311098-10.2017.8.24.0020  senha: ktldd9
 Processo cons: 0310014-37.2018.8.24.0020  senha: xqjkax
@@ -16,7 +17,7 @@ Processo cons: 0310014-37.2018.8.24.0020  senha: xqjkax
 00.456.865/0001-67
 
 Consulta Recibo IR 
--CÃ³digo de acesso 
+-Código de acesso 
 124100526741
 Senha Reggae88
 
@@ -25,25 +26,39 @@ Senha Reggae88
 
 Logmein Senha @reggae88
 
+PIN de Serviço: 46752 
+
+Conforme ultimo comentário entende-se que esta necessidade foi atendida.
+
+
 tecbth_dev: oKmrXmXeF11UxLuJ8OXaQC5UFjKUP7
 desbth: imxiv6s3l4r4hzicbqoepyhxyevp64
-bethadba: tdnwzsfbx0pedtypql7gl9gf3yogzo
+bethadba: nXRGDvtdJReMf94pUsxVKSJrNgZ7du
+Gerar senha bethadba: \\betha.com.br\desenvolvimento\CookBook\Template\Diversos\Utilitários\Betha\Senha.exe /bethadba          
 
-
+Consultar lotes de integração minha folha 
+https://minhafolha.cloud.betha.com.br/#/entidades/ZGF0YWJhc2U6NDQwLGVudGl0eTo3ODk=/administrando/lote
 
 Suporte Base Ponto Balsini
 User: admin
 Senha: ponto.
+Conexão remota: 192.168.2.33 
+minha senha e usuario
+
 
 Server name: Ponto 
 Databasename: Ponto 
 TCP/IP: host=192,168,2,233;serverport=9001
-Acesso a maquina com meu usuÃ¡rio neste IP
+Acesso a maquina com meu usuário neste IP
 
 
 Pontual Fly Balsini
 Entidade:
-RelÃ³gio:
+Relógio:
+
+Atendimento 
+Conforme ultimo comentário a necessidade foi atendida. 
+
 
 Consultas banco pontual 
 select * from glb_owner.vw_entidades where upper(nome) like upper('%cric%') --29 identifica entidade
@@ -55,7 +70,7 @@ select * from glb_owner.vw_AUD_pessoas where i_pessoas = 27921;
 select * from glb_owner.vw_lib_licencas where i_databases = 38 and DT_FINAL is NULL;
 select * from glb_owner.vw_lib_sistemas where i_sistemas in (3,5,8)
 
-Ajustar base para integraÃ§Ã£o pontual 
+Ajustar base para integração pontual 
 select * from integ_estados where estado = 'P'
 select * from integ_config
 
@@ -66,7 +81,7 @@ Desabitar: call bethadba.pg_setoption('fire_triggers','off')
 Habilitar: call bethadba.pg_setoption('fire_triggers','on')
 
 ##################################################################################
-Atualizar atbs automÃ¡tico 
+Atualizar atbs automático 
 c:\BthTools\ATBanco.exe Geral9?C:\FolhaRh6127\At08685.atb?At08707 -uadmin -sadmin
 
 ##################################################################################
@@ -77,8 +92,8 @@ ex.: call bethadba.dbp_conn_gera(1,2018,300);
 
 ##################################################################################
 Recriar logs
-dbeng9 -f C:\Bases\Paranavai\folharh.db 
-dblog -t C:\Bases\Paranavai\folharh.log C:\Bases\Paranavai\folharh.db
+dbeng9 -f C:\Bases\Mariana\betha.db 
+dblog -t C:\Bases\Mariana\betha.log C:\Bases\Mariana\betha.db
 
 SQL de erros de trigger 
 select * from bethadba.erros where i_sistema in (300,314,329)
