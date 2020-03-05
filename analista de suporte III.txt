@@ -1,0 +1,88 @@
+ 2 - Principais responsabilidades
+
+    Prestar suporte avançado em uma linha completa de sistemas e suporte intermediário em outra(s) linha(s), de acordo com os processos, fluxos e procedimentos estabelecidos;
+    Manter-se atualizado na legislação e regras de negócio dos sistemas de sua área de atuação;
+    Monitorar a fila de atendimentos, assumindo, analisando, classificando, priorizando e atualizando o status dos chamados;
+    Registrar nos chamados os questionamentos, orientações, testes realizados, resultados obtidos e soluções, comunicando-se de forma clara e garantindo o entendimento do solicitante;
+    Realizar contato telefônico ativo com o solicitante para obter e registrar informações adicionais, bem como para informar o status do seu chamado;
+    Solicitar apoio na análise e solução dos chamados mais complexos, se necessário;
+    Garantir a qualidade dos atendimentos prestados, assim como manter o tempo de atendimento e o grau de satisfação dos clientes dentro das metas estabelecidas;
+    Concluir os chamados sob sua responsabilidade, provendo soluções consistentes e/ou alternativas, de forma ágil;
+    Escalonar e/ou solicitar apoio aos Analistas mais experientes da equipe na análise e solução dos chamados mais complexos;
+    Sugerir melhorias nos métodos e processos de atendimento;
+    Apoiar os demais Analistas da equipe, na análise e solução de chamados;
+    Identificar, promover e/ou comunicar necessidades de capacitação técnica dos solicitantes dos chamados e dos demais Analistas de sua equipe;
+    Elaborar bases de conhecimento;
+    Participar e contribuir em projetos relacionados à sua área de atuação;
+    Elaborar e conduzir treinamentos e workshops.
+
+3 - Principais resultados
+
+    Atender os clientes com qualidade e excelência elevando o nível de satisfação do mesmo;
+    Cumprir as metas estabelecidas para o estratégia de produtos;
+    Contribuir com equipe no promovendo ações que resultem em melhoria continua dos serviços prestados;
+    Orientação técnica aos analistas da equipe;
+    Reduzir chamados escalonados para o 3° Nível.
+
+4 - Principais dimensões
+
+    Não se aplica.
+
+5 - Experiência profissional
+
+    Acima de 3 anos de experiência em suporte de TI, implantação de sistemas, áreas de atuação ou similares, e/ou experiência acima de 3 anos nas áreas de negócio da Betha.
+
+6 - Competências
+
+6.1 Técnicas
+
+6.1.1 Técnicas Necessárias
+
+    Superior completo ou em andamento em Análise de Sistemas ou em áreas relacionadas ao exercício da sua função, tendo concluído ao menos a 4ª fase;
+    Conhecimento em técnicas de atendimento ao cliente.
+    Conhecimento intermediário no Pacote Office;
+    Conhecimento avançado das regras de negócio em área de atuação;
+    Conhecimento avançado em SQL ou outras linguagens.
+    Certificação Betha na linha de atuação.
+
+6.1.2 Técnicas Desejáveis
+
+    Conhecimento das melhores práticas ITIL.
+
+6.2 Comportamentais
+
+6.2.1 Específicas do cargo
+
+6.2.1.1 Competências orientadas para resultados
+
+    Comprometimento
+    Iniciativa
+    Foco em resultados
+    Administração do tempo
+    Planejamento
+    Inovação
+    Visão sistêmica
+    Visão estratégica
+
+6.2.1.2 Competências orientadas para clientes
+
+    Empatia
+    Comunicação
+    Foco no cliente
+    Solicitude
+
+6.2.1.3 Competências orientadas para liderança ou gestão de pessoas
+
+    Liderança orientadora
+
+6.2.2 Organizacionais
+
+    Accountability
+    Comunicação assertiva
+    Conduta ética
+    Empreendedorismo
+    Engajamento
+    Espírito de equipe
+    Foco em resultados
+    Foco no cliente
+    Visão estratégica

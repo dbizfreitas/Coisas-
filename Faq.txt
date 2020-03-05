@@ -28,10 +28,11 @@ Logmein Senha @reggae88
 
 PIN de Serviço: 46752 
 
-Conforme ultimo comentário entende-se que esta necessidade foi atendida.
+Entidade Suporte Apoio eSocial 8ae04670-8ec2-4eb8-a264-14c66f03bf4f  
 
+relatorios exportados:\\192.168.2.30\Desenvolvimento\release-candidate\folha-rh\reports
 
-tecbth_dev: oKmrXmXeF11UxLuJ8OXaQC5UFjKUP7
+tecbth: BlaOqGP9hTO68TFNzBNWzCRjZgKgA5oubyjsDVtmLSvsCZ91qqRtQhJ7rSy8EiijEZ2FJWTZ_hYUBv29Z7--VzyuPmI=
 desbth: imxiv6s3l4r4hzicbqoepyhxyevp64
 bethadba: nXRGDvtdJReMf94pUsxVKSJrNgZ7du
 Gerar senha bethadba: \\betha.com.br\desenvolvimento\CookBook\Template\Diversos\Utilitários\Betha\Senha.exe /bethadba          
@@ -59,11 +60,14 @@ Relógio:
 Atendimento 
 Conforme ultimo comentário a necessidade foi atendida. 
 
+Tentamos entrar em contato sem sucesso, favor nos retornar o chamado assim que for possível realizarmos o atendimento.
+
+
 
 Consultas banco pontual 
 select * from glb_owner.vw_entidades where upper(nome) like upper('%cric%') --29 identifica entidade
 select * from glb_owner.vw_entidades_databases where i_entidades = 29 --26 identifica database
-CALL bethadba.pkg_bfc.set_ctx(38); -- fixa o contexto do database 
+CALL bethadba.pkg_bfc.set_ctx(26); -- fixa o contexto do database 
 select * from glb_owner.vw_pessoas where i_pessoas = 27921; -- consultas
  
 select * from glb_owner.vw_AUD_pessoas where i_pessoas = 27921;
@@ -88,13 +92,49 @@ c:\BthTools\ATBanco.exe Geral9?C:\FolhaRh6127\At08685.atb?At08707 -uadmin -sadmi
 Comando quando da colum found 
 
 call bethadba.dbp_conn_gera(IN a_entid integer,IN a_ano smallint, IN a_sistema smallint, in a_integracao smallint default 0)
-ex.: call bethadba.dbp_conn_gera(1,2018,300);
+ex.: call bethadba.dbp_conn_gera(1,2019,300);
 
 ##################################################################################
 Recriar logs
-dbeng9 -f C:\Bases\Mariana\betha.db 
-dblog -t C:\Bases\Mariana\betha.log C:\Bases\Mariana\betha.db
+dbeng9 -f C:\Bases\STAFTEC-28591\Nova\folharh_maracas.db 
+dblog -t C:\Bases\STAFTEC-28591\Nova\folharh_maracas.log C:\Bases\STAFTEC-28591\Nova\folharh_maracas.db
 
 SQL de erros de trigger 
 select * from bethadba.erros where i_sistema in (300,314,329)
 order by i_objeto, i_erro 
+######################################################
+Ambiente de testes Transparencia 
+https://test.betha.com.br/transparencia/01037-026/recursos.faces 
+
+#########################################################################################
+SQL chaves migração folha desk VS Folha cloud 
+
+SELECT 
+i_chave_dsk1, i_chave_dsk2, mensagem_erro, mensagem_ajuda
+from bethadba.controle_migracao_registro
+key join bethadba.controle_migracao_registro_ocor
+where bethadba.controle_migracao_registro_ocor.situacao = 1
+and bethadba.controle_migracao_registro_ocor.resolvido = 1 
+and bethadba.controle_migracao_registro.tipo_registro = 'medias-vantagens'
+
+
+SELECT tipo_registro,count()
+ FROM bethadba.controle_migracao_registro
+WHERE id_gerado IS NULL
+GROUP BY tipo_registro
+ORDER BY tipo_registro
+##########################################################################################
+Migração 
+
+Bom dia,
+
+- Disponibilize a base desktop atual que esta realizando a migração no FTP.
+- Informe quais dados estais informando nos argumentos do arqjob de migração
+- Informe qual a entidade web no folha cloud esta sendo migrado os funcionários
+- Caso ainda não tenha sido liberado favor libere o usuario "usuariocsb" como administrador da entidade do folha cloud.
+
+##########################################################################################
+Como configurar conexão ODBC na estação de trabalho do funcionario para acessar o banco da aplicação a partir do servidor do cliente 
+
+http://atendimento.betha.com.br/secure/attachment/928617/928617_Como+criar+conex%C3%A3o+ODBC+de+sistema.pdf
+
