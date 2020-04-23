@@ -96,8 +96,8 @@ ex.: call bethadba.dbp_conn_gera(1,2019,300);
 
 ##################################################################################
 Recriar logs
-dbeng9 -f C:\Bases\STAFTEC-28591\Nova\folharh_maracas.db 
-dblog -t C:\Bases\STAFTEC-28591\Nova\folharh_maracas.log C:\Bases\STAFTEC-28591\Nova\folharh_maracas.db
+dbeng9 -f C:\Bases\ResendeSanear\zerado.db 
+dblog -t C:\Bases\ResendeSanear\zerado.log C:\Bases\ResendeSanear\zerado.db
 
 SQL de erros de trigger 
 select * from bethadba.erros where i_sistema in (300,314,329)
@@ -115,7 +115,7 @@ from bethadba.controle_migracao_registro
 key join bethadba.controle_migracao_registro_ocor
 where bethadba.controle_migracao_registro_ocor.situacao = 1
 and bethadba.controle_migracao_registro_ocor.resolvido = 1 
-and bethadba.controle_migracao_registro.tipo_registro = 'medias-vantagens'
+and bethadba.controle_migracao_registro.tipo_registro = 'matricula'
 
 
 SELECT tipo_registro,count()
